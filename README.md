@@ -1,4 +1,4 @@
-![checker](https://github.com/busshi/philosophers/actions/workflows/checker.yml/badge.svg)
+![checker](https://github.com/busshi/push_swap/actions/workflows/checker.yml/badge.svg)
 
 --- PUSH_SWAP ---
 
