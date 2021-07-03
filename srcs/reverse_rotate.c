@@ -6,7 +6,7 @@
 /*   By: aldubar <aldubar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/25 18:23:02 by aldubar           #+#    #+#             */
-/*   Updated: 2021/04/07 12:17:46 by aldubar          ###   ########.fr       */
+/*   Updated: 2021/07/03 13:00:12 by aldubar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,15 @@
 
 static void	shift_down(t_stack *stack, size_t size)
 {
-	int		tab[size];
+	int		*tab;
 	size_t	i;
 	t_stack	*save;
 
 	i = 0;
 	save = stack;
+	tab = (int *)malloc(sizeof(int) * size);
+	if (!tab)
+		return ;
 	while (stack->next)
 	{
 		tab[i] = stack->nb;
@@ -34,6 +37,7 @@ static void	shift_down(t_stack *stack, size_t size)
 		i++;
 		stack = stack->next;
 	}
+	free(tab);
 }
 
 void		reverse_rotate(t_stack **stack, char c, enum e_bol display)
