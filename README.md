@@ -3,8 +3,10 @@
 --- PUSH_SWAP ---
 
 
-The push_swap program calculates and displays on the standard ouptut the instructions allowing to sort the integers passed as parameters.
-The checker program allows you to check the sorting instructions. Combined with the push_swap program, it checks if the instructions to sort the numbers are good.
+The push_swap program calculates and displays on the standard ouptut the instructions
+allowing to sort the integers passed as parameters.
+The checker program allows you to check the sorting instructions. Combined with the push_swap program,
+it checks if the instructions to sort the numbers are good.
 
 
 Makefile:
