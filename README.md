@@ -12,17 +12,22 @@ it checks if the instructions to sort the numbers are good.
 
 
 Makefile:
+
 make: compile project
+
 make check: compile the project and run evaluation tests
 
 
 push_swap usage:
+
 ARG="-12 -50 101 2 -3"; ./push_swap $ARG
 
 
 checker usage:
+
 ARG="-12 -50 101 2 -3"; ./checker $ARG
 
 
 push_swap + checker usage:
+
 ARG="-12 -50 101 2 -3"; ./push_swap $ARG | ./checker $ARG
