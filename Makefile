@@ -6,7 +6,7 @@
 #    By: aldubar <aldubar@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/03/23 10:19:00 by aldubar           #+#    #+#              #
-#    Updated: 2021/04/11 20:28:36 by aldubar          ###   ########.fr        #
+#    Updated: 2021/07/03 11:33:25 by aldubar          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -100,4 +100,8 @@ fclean:		clean
 
 re:		fclean all
 
-.PHONY:		all clean fclean re bonus
+check:		fclean
+		@if [ ! -d push_swap_checker ]; then git clone https://github.com/busshi/push_swap_checker.git; fi
+		@cd push_swap_checker && /bin/bash grademe.sh
+
+.PHONY:		all clean fclean re bonus check

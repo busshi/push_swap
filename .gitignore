@@ -1,0 +1,5 @@
+push_swap_checker
+*.o
+push_swap
+checker
+libft.a
