@@ -1,5 +1,8 @@
 ![checker](https://github.com/busshi/push_swap/actions/workflows/checker.yml/badge.svg)
 
+[![aldubar's 42Project Score](https://badge42.herokuapp.com/api/project/aldubar/push_swap)](https://github.com/JaeSeoKim/badge42)
+
+
 --- PUSH_SWAP ---
 
 
