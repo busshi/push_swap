@@ -40,3 +40,13 @@ push_swap + checker usage:
 ```bash
 ARG="-12 -50 101 2 -3"; ./push_swap $ARG | ./checker $ARG
 ```
+
+Note:
+- option -r for reverse sort
+- option -v for verbose (display stacks)
+- option -c for colors
+
+Example:
+```bash
+ARG=$(ruby -e "puts (-50...50).to_a.shuffle.join(' ')"); ./push_swap -r -v -c $ARG | ./checker -r -v -c $ARG
+```
